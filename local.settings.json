@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "LrsStorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=saivemustrgtestlrs;AccountKey=Zh/F8lj5oCMMs6oyfW6ARfmVrQS8oHqjLIYLCuVt9tlRRh6A7YB+WfAeRjerGdQ9Figfz8Py2reyADold+eNzw==;EndpointSuffix=core.windows.net"
+  }
+}
