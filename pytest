@@ -1,0 +1,16 @@
+import ServiceCred
+ 
+from msrestazure.azure_active_directory import MSIAuthentication
+from azure.common.credentials import UserPassCredentials
+ 
+#tenantId = "7521acbc-a68c-41e5-a975-1cf83066dd19"
+#resource_type = "https://servicebus.windows.net/"
+tenantId = "fmronline.onmicrosoft.com"
+resource_type = "https://management.core.windows.net/"
+ 
+#result = UserPassCredentials(username=ServiceCred.UserName, password=ServiceCred.Password, tenant=tenantId, proxies="http://http.proxy.fmr.com:8000")
+result = UserPassCredentials(username=ServiceCred.UserName, password=ServiceCred.Password, tenant=tenantId, proxies="http://http.proxy.fmr.com:8000")
+token = result.token
+output_str = concat_string(token['access_token'], token['refresh_token'], token['expires_in'], int(token['expires_on']), token['resource'])
+target_file = generate_file_name(resource_type, token['tenant_id'])
+write_a_line_to_file(target_file, output_str)
