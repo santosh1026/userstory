@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "ap132155-a671188-cosmosdb01"
+        },
+        "location": {
+            "value": "centralus"
+        },
+        "locationName": {
+            "value": "Central US"
+        },
+        "defaultExperience": {
+            "value": "Core (SQL)"
+        },
+        "isZoneRedundant": {
+            "value": "false"
+        },
+        "pairedLocation": {
+            "value": "eastus2"
+        },
+        "pairedLocationName": {
+            "value": "East US 2"
+        }
+    }
+}
