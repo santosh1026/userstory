@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "accountName": {
+        "value": "a667382cosmos1026db"
+      },
+      "primaryRegion": {
+        "value": "Central US"
+      },
+      "secondaryRegion": {
+        "value": "East US 2"
+      },
+      "api": {
+        "value": "Sql"
+      },
+      "keyVaultKeyUri": {
+        "value": "https://mysecretsapp.vault.azure.net/keys/dbkeys"
+      },
+      "defaultConsistencyLevel": {
+        "value": "Session"
+      },
+      "maxStalenessPrefix": {
+        "value": 100000
+      },
+      "maxIntervalInSeconds":{
+        "value": 300
+      }, 
+      "multipleWriteLocations": {
+        "value": false
+      },
+      "automaticFailover": {
+        "value": true
+      }
+    }
+  }
